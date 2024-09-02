@@ -51,6 +51,14 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'www.pngrepo.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'uploads-ssl.webflow.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'stake-casino-bonus.com',
+      },
     ],
   },
 
