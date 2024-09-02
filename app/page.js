@@ -289,8 +289,8 @@ export default function Home() {
         <div className="w-11/12 m-auto my-5 pb-10 lg:py-10 flex flex-col items-center gap-5 md:gap-0 md:flex-row lg:flex-wrap  lg:gap-8 justify-evenly">
           <div className="md:w-[30%] overflow-hidden shadow-lg hover:scale-105 md:hover:scale-110 duration-300 border-2 border-sky-600 shadow-black rounded-lg">
             <Image
-              className="w-full aspect-video blur-[1px]"
-              src="/Screenshot_myBlog_webApp.png"
+              className="w-full aspect-video"
+              src="https://i1.wp.com/theappentrepreneur.com/wp-content/uploads/2013/02/Blogging-Apps-For-Bloggers.jpg?fit=730%2C382&ssl=1"
               alt="Sunset in the mountains"
               width={600}
               height={400}

@@ -59,6 +59,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'stake-casino-bonus.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'i1.wp.com',
+      },
     ],
   },
 
