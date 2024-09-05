@@ -1,10 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { useEffect, useState } from "react";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { Link, Element } from 'react-scroll';
 import "./globals.css";
 
 export default function Home() {
@@ -145,7 +145,8 @@ export default function Home() {
       <div className="w-full min-h-screen bg-[url('https://assets.awwwards.com/awards/submissions/2022/08/62ed824664c3a873839057.png')] object-cover bg-bottom bg-no-repeat blur-md fixed top-0 z-[-2]"></div>
 
       {/* navigation Bar */}
-      <nav className="w-full h-24 flex  items-center justify-center md:justify-between md:px-10 lg:px-20 bg-gradient-to-b from-black to-transparent">
+      <nav 
+      name="home" className="w-full h-24 flex  items-center justify-center md:justify-between md:px-10 lg:px-20 bg-gradient-to-b from-black to-transparent">
         <div>
           <span className="cursor-default text-4xl underline md:no-underline md:text-sky-300 drop-shadow-lg shadow-black">
             Portfolio
@@ -153,41 +154,51 @@ export default function Home() {
         </div>
         <div>
           <ul className="hidden md:flex items-center justify-evenly md:gap-6 lg:gap-10">
-            <a href="#" className=" transition-all duration-700 ease-in-out">
+            <Link to="home"
+            smooth={true}
+                  duration={200}
+                  offset={-70}>
               <li className="cursor-pointer hover:drop-shadow hover:underline hover:text-sky-300 font-mono">
                 Home
               </li>
-            </a>
-            <a
-              href="#projectSection"
-              className=" transition-all duration-700 ease-in-out"
+            </Link>
+            <Link
+              to="projectSection"
+              smooth={true}
+                  duration={200}
+                  offset={-70}
             >
               <li className="cursor-pointer hover:underline font-mono hover:text-sky-300">
                 Projects
               </li>
-            </a>
-            <a
-              href="#skillsSection"
-              className=" transition-all duration-700 ease-in-out"
+            </Link>
+            <Link
+              to="skillsSection"
+              smooth={true}
+                  duration={200}
+                  offset={-70}
             >
               <li className="cursor-pointer hover:underline font-mono hover:text-sky-300">
                 Skills
               </li>
-            </a>
-            <a
-              href="#aboutSection"
-              className=" transition-all duration-700 ease-in-out"
+            </Link>
+            <Link
+              to="aboutSection"
+              smooth={true}
+                  duration={200}
+                  offset={-70}
             >
               <li className="cursor-pointer hover:underline font-mono hover:text-sky-300">
                 About
               </li>
-            </a>
+            </Link>
           </ul>
         </div>
       </nav>
 
       {/* Intro Section */}
-      <section className="container m-auto py-5 md:py-10 lg:py-28 flex justify-center">
+      <Element
+       className="container m-auto py-5 md:py-10 lg:py-28 flex justify-center">
         <div className=" w-full flex flex-col gap-3 justify-center items-center">
           <div className="text-4xl md:text-5xl lg:text-7xl font-bold cursor-default">
             Vineet k. Chauhan
@@ -215,7 +226,9 @@ export default function Home() {
           <div className="flex gap-10">
             <Link
               href="#aboutSection"
-              className=" transition-all duration-700 ease-in-out"
+              smooth={true}
+                  duration={200}
+                  offset={-70}
             >
               <span className="flex gap-2 font-mono items-center cursor-pointer px-5 py-2 border-2 border-white rounded-md hover:bg-gray-800">
                 <span className="text-xs md:text-sm">Contact </span>
@@ -250,7 +263,9 @@ export default function Home() {
             <Link
               href="https://github.com/vineet-javadev"
               target="_blank"
-              className=" transition-all duration-700 ease-in-out"
+              smooth={true}
+                  duration={200}
+                  offset={-70}
             >
               <span className="flex gap-2 font-mono items-center cursor-pointer px-5 py-2 border-2 border-white rounded-md hover:bg-gray-800">
                 <span className="text-xs md:text-sm">GitHub </span>
@@ -275,11 +290,11 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </section>
+      </Element>
 
       {/* Project section */}
-      <section
-        id="projectSection"
+      <Element
+        name="projectSection"
         className="container mb-10 pb-5  backdrop-blur-2xl m-auto rounded-3xl shadow-lg shadow-black "
       >
         <div className=" w-3/4 m-auto flex items-center justify-center py-3 border-b-2 border-sky-800 ">
@@ -531,11 +546,11 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </Element>
 
       {/* Skills section */}
-      <section
-        id="skillsSection"
+      <Element
+        name="skillsSection"
         className="container mb-10 pb-5 backdrop-blur-2xl m-auto rounded-3xl shadow-lg shadow-black "
       >
         <div className=" w-3/4 m-auto flex items-center justify-center py-3 border-b-2 border-sky-800 ">
@@ -762,11 +777,11 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </Element>
 
       {/* About section */}
-      <section
-        id="aboutSection"
+      <Element
+        name="aboutSection"
         className="container md:mb-5 lg:mb-10 lg:pb-5 backdrop-blur-2xl m-auto rounded-3xl shadow-lg shadow-black scroll-smooth "
       >
         <div className=" w-3/4 m-auto flex items-center justify-center py-3 border-b-2 border-sky-800 ">
@@ -1047,6 +1062,7 @@ export default function Home() {
                       type="text"
                       placeholder="Jane Doe"
                       name="user_name"
+                      required
                     />
                   </div>
                   {/* <div className="w-full md:w-1/2 px-3">
@@ -1078,6 +1094,7 @@ export default function Home() {
                       type="email"
                       placeholder="********@*****.**"
                       name="user_email"
+                      required
                     />
                   </div>
                 </div>
@@ -1094,6 +1111,7 @@ export default function Home() {
                       rows="10"
                       className="appearance-none block w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                       name="message"
+                      required
                     ></textarea>
                   </div>
                   <div className="flex justify-between w-full px-3">
@@ -1112,10 +1130,11 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </Element>
 
       {/* Footer */}
-      <nav className="w-full h-16 md:h-20 lg:h-32 flex items-center justify-center px-20 bg-gradient-to-t from-black to-transparent">
+      <nav 
+      className="w-full h-16 md:h-20 lg:h-32 flex items-center justify-center px-20 bg-gradient-to-t from-black to-transparent">
         {/* <div>
           <span className="cursor-default text-4xl">Portfolio</span>
         </div>
@@ -1153,7 +1172,8 @@ export default function Home() {
       </nav>
 
       {/* Social Links */}
-      <div className="hidden fixed md:block bottom-1 md:bottom-4 right-1 lg:right-3 p-2">
+      <div 
+      className="hidden fixed md:block bottom-1 md:bottom-4 right-1 lg:right-3 p-2">
         <ul className="">
           <li className="my-4">
             <a
