@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { Link, Element } from 'react-scroll';
+import { Link, Element } from "react-scroll";
 import "./globals.css";
 
 export default function Home() {
@@ -145,8 +145,10 @@ export default function Home() {
       <div className="w-full min-h-screen bg-[url('https://assets.awwwards.com/awards/submissions/2022/08/62ed824664c3a873839057.png')] object-cover bg-bottom bg-no-repeat blur-md fixed top-0 z-[-2]"></div>
 
       {/* navigation Bar */}
-      <nav 
-      name="home" className="w-full h-24 flex  items-center justify-center md:justify-between md:px-10 lg:px-20 bg-gradient-to-b from-black to-transparent">
+      <nav
+        name="home"
+        className="w-full h-24 flex  items-center justify-center md:justify-between md:px-10 lg:px-20 bg-gradient-to-b from-black to-transparent"
+      >
         <div>
           <span className="cursor-default text-4xl underline md:no-underline md:text-sky-300 drop-shadow-lg shadow-black">
             Portfolio
@@ -154,51 +156,37 @@ export default function Home() {
         </div>
         <div>
           <ul className="hidden md:flex items-center justify-evenly md:gap-6 lg:gap-10">
-            <Link to="home"
-            smooth={true}
-                  duration={200}
-                  offset={-70}>
+            <Link to="home" smooth={true} duration={200} offset={-70}>
               <li className="cursor-pointer hover:drop-shadow hover:underline hover:text-sky-300 font-mono">
                 Home
               </li>
             </Link>
-            <Link
-              to="projectSection"
-              smooth={true}
-                  duration={200}
-                  offset={-70}
-            >
+            <Link to="projectSection" smooth={true} duration={200} offset={-70}>
               <li className="cursor-pointer hover:underline font-mono hover:text-sky-300">
                 Projects
               </li>
             </Link>
-            <Link
-              to="skillsSection"
-              smooth={true}
-                  duration={200}
-                  offset={-70}
-            >
+            <Link to="skillsSection" smooth={true} duration={200} offset={-70}>
               <li className="cursor-pointer hover:underline font-mono hover:text-sky-300">
                 Skills
               </li>
             </Link>
-            <Link
-              to="aboutSection"
-              smooth={true}
-                  duration={200}
-                  offset={-70}
-            >
+            <Link to="contactSection" smooth={true} duration={200} offset={-70}>
               <li className="cursor-pointer hover:underline font-mono hover:text-sky-300">
-                About
+                Contact
               </li>
             </Link>
+            <a href="https://drive.google.com/file/d/1SAZfPDfOL-oWEhLCwLBi6fctASoUhfQh/view?usp=drive_link" target="_blank">
+              <li className="rounded-lg bg-white text-black cursor-pointer px-4 py-2 font-bold hover:text-sky-900">
+                RESUME
+              </li>
+            </a>
           </ul>
         </div>
       </nav>
 
       {/* Intro Section */}
-      <Element
-       className="container m-auto py-5 md:py-10 lg:py-28 flex justify-center">
+      <Element className="container m-auto py-5 md:py-10 lg:py-28 flex justify-center">
         <div className=" w-full flex flex-col gap-3 justify-center items-center">
           <div className="text-4xl md:text-5xl lg:text-7xl font-bold cursor-default">
             Vineet k. Chauhan
@@ -224,12 +212,7 @@ export default function Home() {
             solving | Hunger to learn new Technology
           </div>
           <div className="flex gap-10">
-            <Link
-              href="#aboutSection"
-              smooth={true}
-                  duration={200}
-                  offset={-70}
-            >
+            <Link to="aboutSection" smooth={true} duration={200} offset={-70}>
               <span className="flex gap-2 font-mono items-center cursor-pointer px-5 py-2 border-2 border-white rounded-md hover:bg-gray-800">
                 <span className="text-xs md:text-sm">Contact </span>
                 <svg
@@ -260,13 +243,7 @@ export default function Home() {
                 </svg>
               </span>
             </Link>
-            <Link
-              href="https://github.com/vineet-javadev"
-              target="_blank"
-              smooth={true}
-                  duration={200}
-                  offset={-70}
-            >
+            <a href="https://github.com/vineet-javadev" target="_blank">
               <span className="flex gap-2 font-mono items-center cursor-pointer px-5 py-2 border-2 border-white rounded-md hover:bg-gray-800">
                 <span className="text-xs md:text-sm">GitHub </span>
                 <svg
@@ -287,7 +264,7 @@ export default function Home() {
                   />
                 </svg>
               </span>
-            </Link>
+            </a>
           </div>
         </div>
       </Element>
@@ -319,7 +296,7 @@ export default function Home() {
               </p>
             </div>
             <div className="px-6 pt-4 pb-2 bg-gray-900">
-              <Link
+              <a
                 href="https://github.com/vineet-javadev/myBlog-webApp-Frontend"
                 target="_blank"
                 className="cursor-pointer inline-block bg-gray-200 rounded-full p-1 text-sm md:text-xs lg:text-sm font-semibold text-gray-700 mr-2"
@@ -355,8 +332,8 @@ export default function Home() {
                     strokeWidth="1.5"
                   />
                 </svg>
-              </Link>
-              <Link
+              </a>
+              <a
                 href="https://github.com/vineet-javadev/myBlog-webApp-Backend"
                 target="_blank"
                 className="cursor-pointer inline-block bg-gray-200 rounded-full p-1 text-sm md:text-xs lg:text-sm font-semibold text-gray-700 mr-2"
@@ -406,7 +383,7 @@ export default function Home() {
                     strokeLinejoin="round"
                   />
                 </svg>
-              </Link>
+              </a>
               {/* <span className="cursor-pointer inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
                 Visit
               </span> */}
@@ -429,7 +406,7 @@ export default function Home() {
               </p>
             </div>
             <div className="px-6 pt-4 pb-2 bg-gray-900">
-              <Link
+              <a
                 href={"https://github.com/vineet-javadev/Mine-Game"}
                 target="_blank"
                 className="cursor-pointer inline-block text-sm md:text-xs lg:text-sm bg-gray-200 rounded-full p-1 font-semibold text-gray-700 mr-2"
@@ -452,12 +429,15 @@ export default function Home() {
                     strokeLinejoin="round"
                   />
                 </svg>
-              </Link>
-              <Link
-                download={true}
+              </a>
+              <a
+              download="Vineet's CV.pdf"
                 href={
-                  "https://github.com/vineet-javadev/Mine-Game/blob/main/Installation%20file/MineSetup.exe"
+                  "https://drive.google.com/uc?export=download&id=1SAZfPDfOL-oWEhLCwLBi6fctASoUhfQh"
+                  // https://drive.google.com/uc?export=download&id=1A2B3C4D5EF6GHIJKL
+                  
                 }
+                target="_blank"
               >
                 <span className="cursor-pointer inline-block text-sm md:text-xs lg:text-sm bg-gray-200 rounded-full p-1  font-semibold text-gray-700 mr-2 ">
                   {/* Installation File */}
@@ -493,7 +473,7 @@ export default function Home() {
                     />
                   </svg>
                 </span>
-              </Link>
+              </a>
             </div>
           </div>
 
@@ -513,7 +493,7 @@ export default function Home() {
               </p>
             </div>
             <div className="px-6 pt-4 pb-2 bg-gray-900">
-              <Link
+              <a
                 href="https://github.com/vineet-javadev/EMS-API-in-Spring-Boot"
                 target="_blank"
                 data-tooltip-target="tooltip-default"
@@ -537,7 +517,7 @@ export default function Home() {
                     strokeLinejoin="round"
                   />
                 </svg>
-              </Link>
+              </a>
               {/* tooltip */}
 
               {/* <span className="cursor-pointer inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
@@ -781,12 +761,12 @@ export default function Home() {
 
       {/* About section */}
       <Element
-        name="aboutSection"
+        name="contactSection"
         className="container md:mb-5 lg:mb-10 lg:pb-5 backdrop-blur-2xl m-auto rounded-3xl shadow-lg shadow-black scroll-smooth "
       >
         <div className=" w-3/4 m-auto flex items-center justify-center py-3 border-b-2 border-sky-800 ">
           <span className="text-2xl text-sky-300 font-bold font-mono">
-            ABOUT ME
+            CONTACT ME
           </span>
         </div>
 
@@ -1133,8 +1113,7 @@ export default function Home() {
       </Element>
 
       {/* Footer */}
-      <nav 
-      className="w-full h-16 md:h-20 lg:h-32 flex items-center justify-center px-20 bg-gradient-to-t from-black to-transparent">
+      <nav className="w-full h-16 md:h-20 lg:h-32 flex items-center justify-center px-20 bg-gradient-to-t from-black to-transparent">
         {/* <div>
           <span className="cursor-default text-4xl">Portfolio</span>
         </div>
@@ -1172,8 +1151,7 @@ export default function Home() {
       </nav>
 
       {/* Social Links */}
-      <div 
-      className="hidden fixed md:block bottom-1 md:bottom-4 right-1 lg:right-3 p-2">
+      <div className="hidden fixed md:block bottom-1 md:bottom-4 right-1 lg:right-3 p-2">
         <ul className="">
           <li className="my-4">
             <a
