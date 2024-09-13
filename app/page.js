@@ -6,20 +6,9 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { Link, Element } from "react-scroll";
 import "./globals.css";
+import TypingAnimation from "@/Components/typingAnimation";
 
 export default function Home() {
-  useEffect(() => {
-    let flag = true;
-    setInterval(() => {
-      if (flag) {
-        document.getElementById("role").innerHTML = "Backend";
-        flag = false;
-      } else {
-        document.getElementById("role").innerHTML = "Full-Stack";
-        flag = true;
-      }
-    }, 2000);
-  }, []);
 
   const form = useRef();
 
@@ -196,12 +185,13 @@ export default function Home() {
           </div>
           <div className="text-sm md:text-md lg:text-xl  font-bold pl-4 cursor-default">
             Java{" "}
-            <span
+            {/* <span
               className="text-sky-500 relative w-[max-content] font-mono underline before:absolute before:inset-0 before:animate-typewriter"
               id="role"
             >
               Full-Stack
-            </span>{" "}
+            </span>{" "} */}
+             <TypingAnimation/>{" "}
             Developer
           </div>
           <div className="md:hidden w-9/12 lg:w-11/12 pb-5 text-sm font-mono flex items-center  text-gray-400 cursor-default text-center pl-4">
