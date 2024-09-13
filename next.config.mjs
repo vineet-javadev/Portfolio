@@ -63,6 +63,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'i1.wp.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'savedelete.com',
+      },
     ],
   },
 
