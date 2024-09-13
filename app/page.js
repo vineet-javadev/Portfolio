@@ -215,7 +215,7 @@ export default function Home() {
             solving | Hunger to learn new Technology
           </div>
           <div className="flex gap-10">
-            <Link to="aboutSection" smooth={true} duration={200} offset={-70}>
+            <Link to="contactSection" smooth={true} duration={300} offset={-70}>
               <span className="flex gap-2 font-mono items-center cursor-pointer px-5 py-2 border-2 border-white rounded-md hover:bg-gray-800">
                 <span className="text-xs md:text-sm">Contact </span>
                 <svg
