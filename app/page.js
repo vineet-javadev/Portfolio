@@ -9,7 +9,6 @@ import "./globals.css";
 import TypingAnimation from "@/Components/typingAnimation";
 
 export default function Home() {
-
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -139,7 +138,7 @@ export default function Home() {
         className="w-full h-24 flex  items-center justify-center md:justify-between md:px-10 lg:px-20 bg-gradient-to-b from-black to-transparent"
       >
         <div>
-          <span className="cursor-default text-4xl underline md:no-underline md:text-sky-300 drop-shadow-lg shadow-black">
+          <span className="hover:underline cursor-default text-4xl underline md:no-underline md:text-sky-300 drop-shadow-lg shadow-black">
             Portfolio
           </span>
         </div>
@@ -183,7 +182,7 @@ export default function Home() {
           <div className="text-4xl md:text-5xl lg:text-7xl font-bold cursor-default">
             Vineet k. Chauhan
           </div>
-          <div className="text-sm md:text-md lg:text-xl  font-bold pl-4 cursor-default">
+          <div className="text-sm  md:text-md lg:text-xl text-blue-600 font-bold pl-4 cursor-default">
             Java{" "}
             {/* <span
               className="text-sky-500 relative w-[max-content] font-mono underline before:absolute before:inset-0 before:animate-typewriter"
@@ -191,18 +190,17 @@ export default function Home() {
             >
               Full-Stack
             </span>{" "} */}
-             <TypingAnimation/>{" "}
-            Developer
+            <TypingAnimation /> Developer
           </div>
           <div className="md:hidden w-9/12 lg:w-11/12 pb-5 text-sm font-mono flex items-center  text-gray-400 cursor-default text-center pl-4">
-            Java Full Stack Developer | Backend | Spring boot | MySQL | React Js
-            | Next Js | Tailwind | DSA | Problem solving
+            Java Full Stack Developer | Spring boot | Spring AI | MySQL | React
+            Js | Next Js | Tailwind | DSA | Problem solving
           </div>
           <div className="hidden w-9/12 lg:w-11/12 pb-5 text-sm font-mono md:flex items-center  text-gray-400 cursor-default text-center pl-4">
-            Full Stack Developer | Backend | Java Developer | Spring boot |
-            Scalable APIs | JDBC | MySQL | JavaScript | React Js | Next Js |
-            Tailwind | Bootstrap Data Structures and Algorithm ( DSA ) | Problem
-            solving | Hunger to learn new Technology
+            Java Full Stack Developer | Backend | Spring boot | Spring AI |
+            Scalable APIs | JDBC | MySQL | React Js | Next Js | Tailwind |
+            Bootstrap Data Structures and Algorithm ( DSA ) | Problem solving |
+            Hunger to learn new Technology
           </div>
           <div className="flex gap-10">
             <Link to="contactSection" smooth={true} duration={300} offset={-70}>
@@ -267,12 +265,476 @@ export default function Home() {
         name="projectSection"
         className="container mb-10 pb-5  backdrop-blur-2xl m-auto rounded-3xl shadow-lg shadow-black "
       >
-        <div className=" w-3/4 m-auto flex items-center justify-center py-3 border-b-2 border-sky-800 ">
+        <div className=" w-3/4 m-auto flex  items-center justify-center py-3 border-b-2 border-sky-800 ">
           <span className="text-2xl text-sky-300 font-bold font-mono">
             PROJECTS
           </span>
         </div>
         <div className="w-11/12 m-auto my-5 pb-10 lg:py-10 flex flex-col items-center gap-5 md:gap-0 md:flex-row lg:flex-wrap  lg:gap-8 justify-evenly">
+          {/* AI Generative Project */}
+          <div className="md:w-[30%] overflow-hidden shadow-lg hover:scale-105 md:hover:scale-110 duration-300 border-2 border-sky-600 shadow-black rounded-lg">
+            <Image
+              className="w-full aspect-video"
+              src="https://firebasestorage.googleapis.com/v0/b/portfolio-imagedb.appspot.com/o/screenshotHome.PNG?alt=media&token=451a548c-9876-4a8a-911d-522c1c4aa9b5"
+              alt="AI Generative Thumbnail"
+              width={600}
+              height={400}
+            />
+
+            <div className="px-6 py-4 bg-gray-900">
+              <div className="font-bold text-xl mb-2">AI-Generative</div>
+              <p className="text-gray-200 font-thin md:text-sm lg:text-base  min-h-12">
+                Next Js | Spring Boot | Spring AI
+              </p>
+            </div>
+            <div className="px-6 pt-4 pb-2 bg-gray-900 flex items-center justify-between">
+              <span>
+                <a
+                  title="FrontEnd"
+                  href="https://github.com/vineet-javadev/first-ai-project"
+                  target="_blank"
+                  className="cursor-pointer inline-block bg-gray-200 rounded-full p-1 text-sm md:text-xs lg:text-sm font-semibold text-gray-700 mr-2"
+                >
+                  {/* Frontend */}
+                  <svg
+                    className="hover:scale-110 hover:animate-spin"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="22"
+                    height="22"
+                    color="blue"
+                    fill="none"
+                  >
+                    <path
+                      d="M8.00001 12C8.00001 6.47715 9.79087 2 12 2C14.2091 2 16 6.47715 16 12C16 17.5228 14.2091 22 12 22C9.79087 22 8.00001 17.5228 8.00001 12Z"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                    />
+                    <path
+                      d="M9.97531 8.61921C14.8173 5.85779 19.649 5.17014 20.7673 7.08331C21.8855 8.99648 18.8667 12.786 14.0247 15.5474C9.18271 18.3088 4.35098 18.9965 3.23277 17.0833C2.11455 15.1701 5.13329 11.3806 9.97531 8.61921Z"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                    />
+                    <path
+                      d="M14.0247 8.61921C18.8667 11.3806 21.8855 15.1701 20.7673 17.0833C19.649 18.9965 14.8173 18.3088 9.97531 15.5474C5.13329 12.786 2.11455 8.99648 3.23277 7.08331C4.35098 5.17014 9.18271 5.85779 14.0247 8.61921Z"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                    />
+                    <path
+                      d="M13.5 12C13.5 12.8284 12.8284 13.5 12 13.5C11.1716 13.5 10.5 12.8284 10.5 12C10.5 11.1716 11.1716 10.5 12 10.5C12.8284 10.5 13.5 11.1716 13.5 12Z"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                    />
+                  </svg>
+                </a>
+                <a
+                  title="BackEnd"
+                  href="https://github.com/vineet-javadev/FirstAI-project-backend"
+                  target="_blank"
+                  className="cursor-pointer inline-block bg-gray-200 rounded-full p-1 text-sm md:text-xs lg:text-sm font-semibold text-gray-700 mr-2"
+                >
+                  {/* Backend */}
+                  <svg
+                    className="hover:scale-110 hover:animate-spin"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="22"
+                    height="22"
+                    color="#d0021b"
+                    fill="none"
+                  >
+                    <path
+                      d="M6.17481 10.3333C4.96738 10.7408 4.22049 11.304 4.22049 11.9261C4.22049 12.7743 5.60897 13.513 7.6601 13.897M7.6601 13.897C6.89833 14.2824 6.44271 14.7715 6.44271 15.3038C6.44271 16.5474 8.93001 17.5556 11.9983 17.5556C12.7884 17.5556 13.54 17.4887 14.2205 17.3682M7.6601 13.897C8.61629 14.076 9.71648 14.1779 10.8872 14.1779C12.5946 14.1779 14.1521 13.9611 15.3316 13.6045M16.4427 10.1243C15.031 10.5414 13.0635 10.8002 10.8872 10.8002C6.5916 10.8002 3.10938 9.79203 3.10938 8.5484C3.10938 7.5881 5.18563 6.76821 8.10937 6.44446"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M22 19.0699C22 20.6882 17.5228 22 12 22C6.47715 22 2 20.6882 2 19.0699C2 17.9195 3.70729 16.9239 7 16.4444"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                    />
+                    <path
+                      d="M18.7591 8.78799C22.9744 7.69436 23.5765 14.2562 17.5547 16.4438"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M17.5582 2C16.8173 2.12346 15.4246 2.81481 15.7802 4.59259C16.1358 6.37037 15.6322 7.30864 15.3359 7.55556"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M13.1128 2C12.372 2.14815 10.9793 2.97778 11.3349 5.11111C11.6905 7.24444 11.1869 7.81482 10.8906 8.11111"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </a>
+                <a
+                  title="Documentation"
+                  href="https://github.com/vineet-javadev/first-ai-project/blob/master/README.md"
+                  target="_blank"
+                  className="cursor-pointer inline-block bg-gray-200 rounded-full p-1 text-sm md:text-xs lg:text-sm font-semibold text-gray-700 mr-2"
+                >
+                  {/* Documentation */}
+                  <svg
+                  className="hover:scale-110 hover:animate-spin"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="22"
+                    height="22"
+                    color="#000000"
+                    fill="none"
+                  >
+                    <path
+                      d="M14.5 5L12.5 5C9.67157 5 8.25736 5 7.37868 5.87868C6.5 6.75736 6.5 8.17157 6.5 11L6.5 16C6.5 18.8284 6.5 20.2426 7.37868 21.1213C8.25736 22 9.67157 22 12.5 22H13.8431C14.6606 22 15.0694 22 15.4369 21.8478C15.8045 21.6955 16.0935 21.4065 16.6716 20.8284L19.3284 18.1716C19.9065 17.5935 20.1955 17.3045 20.3478 16.9369C20.5 16.5694 20.5 16.1606 20.5 15.3431V11C20.5 8.17157 20.5 6.75736 19.6213 5.87868C18.7426 5 17.3284 5 14.5 5Z"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M15 21.5L15 20.5C15 18.6144 15 17.6716 15.5858 17.0858C16.1716 16.5 17.1144 16.5 19 16.5L20 16.5"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M6.5 19C4.84315 19 3.5 17.6569 3.5 16L3.5 8C3.5 5.17157 3.5 3.75736 4.37868 2.87868C5.25736 2 6.67157 2 9.5 2L14.5004 2C16.1572 2.00001 17.5004 3.34319 17.5004 5.00003"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M10.0011 13L14.0011 13M10.0011 9L17.0011 9"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </a>
+              </span>
+              <a
+                title="Live Preview"
+                href="https://ai-generative-zeta.vercel.app/"
+                target="_blank"
+                className="cursor-pointer inline-block bg-gray-200 rounded-full p-1 text-sm md:text-xs lg:text-sm font-semibold text-gray-700 "
+              >
+                <svg
+                  className="hover:scale-110 hover:animate-spin"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="22"
+                  height="22"
+                  color="#0261d3"
+                  fill="none"
+                >
+                  <path
+                    d="M21.544 11.045C21.848 11.4713 22 11.6845 22 12C22 12.3155 21.848 12.5287 21.544 12.955C20.1779 14.8706 16.6892 19 12 19C7.31078 19 3.8221 14.8706 2.45604 12.955C2.15201 12.5287 2 12.3155 2 12C2 11.6845 2.15201 11.4713 2.45604 11.045C3.8221 9.12944 7.31078 5 12 5C16.6892 5 20.1779 9.12944 21.544 11.045Z"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  />
+                  <path
+                    d="M15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12Z"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  />
+                </svg>
+              </a>
+              {/* <span className="cursor-pointer inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                Visit
+              </span> */}
+            </div>
+          </div>
+
+          {/* Tree like Structure */}
+          <div className="md:w-[30%] overflow-hidden shadow-lg hover:scale-105 md:hover:scale-110 duration-300 border-2 border-sky-600 shadow-black rounded-lg">
+            <Image
+              className="w-full aspect-video"
+              src="https://firebasestorage.googleapis.com/v0/b/portfolio-imagedb.appspot.com/o/tree%20like%20structure%2Fscreenshot.png?alt=media&token=9d81ae9d-dc7d-433b-b84e-4cfb22baf491"
+              alt="Sunset in the mountains"
+              width={600}
+              height={400}
+            />
+
+            <div className="px-6 py-4 bg-gray-900">
+              <div className="font-bold text-xl mb-2">Sample Tree</div>
+              <p className="text-gray-200 md:text-sm lg:text-base font-thin min-h-12">
+                Next Js | React Flow
+              </p>
+            </div>
+            <div className="px-6 pt-4 pb-2 bg-gray-900 flex items-center justify-between">
+              <span>
+                <a
+                  title="FrontEnd"
+                  href="https://github.com/vineet-javadev/sample_tree_structure"
+                  target="_blank"
+                  className="cursor-pointer inline-block bg-gray-200 rounded-full p-1 text-sm md:text-xs lg:text-sm font-semibold text-gray-700 mr-2"
+                >
+                  {/* Frontend */}
+                  <svg
+                    className="hover:scale-110 hover:animate-spin"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="22"
+                    height="22"
+                    color="blue"
+                    fill="none"
+                  >
+                    <path
+                      d="M8.00001 12C8.00001 6.47715 9.79087 2 12 2C14.2091 2 16 6.47715 16 12C16 17.5228 14.2091 22 12 22C9.79087 22 8.00001 17.5228 8.00001 12Z"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                    />
+                    <path
+                      d="M9.97531 8.61921C14.8173 5.85779 19.649 5.17014 20.7673 7.08331C21.8855 8.99648 18.8667 12.786 14.0247 15.5474C9.18271 18.3088 4.35098 18.9965 3.23277 17.0833C2.11455 15.1701 5.13329 11.3806 9.97531 8.61921Z"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                    />
+                    <path
+                      d="M14.0247 8.61921C18.8667 11.3806 21.8855 15.1701 20.7673 17.0833C19.649 18.9965 14.8173 18.3088 9.97531 15.5474C5.13329 12.786 2.11455 8.99648 3.23277 7.08331C4.35098 5.17014 9.18271 5.85779 14.0247 8.61921Z"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                    />
+                    <path
+                      d="M13.5 12C13.5 12.8284 12.8284 13.5 12 13.5C11.1716 13.5 10.5 12.8284 10.5 12C10.5 11.1716 11.1716 10.5 12 10.5C12.8284 10.5 13.5 11.1716 13.5 12Z"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                    />
+                  </svg>
+                </a>
+
+                <a
+                  title="Documentation"
+                  href="https://github.com/vineet-javadev/sample_tree_structure/blob/master/README.md"
+                  target="_blank"
+                  className="cursor-pointer inline-block bg-gray-200 rounded-full p-1 text-sm md:text-xs lg:text-sm font-semibold text-gray-700 mr-2"
+                >
+                  {/* Documentation */}
+                  <svg
+                    className="hover:scale-110 hover:animate-spin"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="22"
+                    height="22"
+                    color="#000000"
+                    fill="none"
+                  >
+                    <path
+                      d="M14.5 5L12.5 5C9.67157 5 8.25736 5 7.37868 5.87868C6.5 6.75736 6.5 8.17157 6.5 11L6.5 16C6.5 18.8284 6.5 20.2426 7.37868 21.1213C8.25736 22 9.67157 22 12.5 22H13.8431C14.6606 22 15.0694 22 15.4369 21.8478C15.8045 21.6955 16.0935 21.4065 16.6716 20.8284L19.3284 18.1716C19.9065 17.5935 20.1955 17.3045 20.3478 16.9369C20.5 16.5694 20.5 16.1606 20.5 15.3431V11C20.5 8.17157 20.5 6.75736 19.6213 5.87868C18.7426 5 17.3284 5 14.5 5Z"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M15 21.5L15 20.5C15 18.6144 15 17.6716 15.5858 17.0858C16.1716 16.5 17.1144 16.5 19 16.5L20 16.5"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M6.5 19C4.84315 19 3.5 17.6569 3.5 16L3.5 8C3.5 5.17157 3.5 3.75736 4.37868 2.87868C5.25736 2 6.67157 2 9.5 2L14.5004 2C16.1572 2.00001 17.5004 3.34319 17.5004 5.00003"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M10.0011 13L14.0011 13M10.0011 9L17.0011 9"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </a>
+              </span>
+              <a
+                title="Live Preview"
+                href="https://sample-tree-structure.vercel.app/"
+                target="_blank"
+                className="cursor-pointer inline-block bg-gray-200 rounded-full p-1 text-sm md:text-xs lg:text-sm font-semibold text-gray-700 "
+              >
+                <svg
+                  className="hover:scale-110 hover:animate-spin"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="22"
+                  height="22"
+                  color="#0261d3"
+                  fill="none"
+                >
+                  <path
+                    d="M21.544 11.045C21.848 11.4713 22 11.6845 22 12C22 12.3155 21.848 12.5287 21.544 12.955C20.1779 14.8706 16.6892 19 12 19C7.31078 19 3.8221 14.8706 2.45604 12.955C2.15201 12.5287 2 12.3155 2 12C2 11.6845 2.15201 11.4713 2.45604 11.045C3.8221 9.12944 7.31078 5 12 5C16.6892 5 20.1779 9.12944 21.544 11.045Z"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  />
+                  <path
+                    d="M15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12Z"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  />
+                </svg>
+              </a>
+              {/* <span className="cursor-pointer inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                Visit
+              </span> */}
+            </div>
+          </div>
+
+          {/* Mine Game  */}
+          <div className="md:w-[30%] overflow-hidden shadow-lg hover:scale-105 md:hover:scale-110 duration-300 border-2 border-sky-600 shadow-black rounded-lg">
+            <Image
+              className="w-full aspect-video"
+              src="https://stake-casino-bonus.com/wp-content/uploads/2022/06/mystake-chicken-game-alternative-mines-stake.com-casino-2022-tutorial-how-to-win.png"
+              alt="Sunset in the mountains"
+              width={600}
+              height={400}
+            />
+
+            <div className="px-6 py-4 bg-gray-900">
+              <div className="font-bold text-xl mb-2">Mine Game</div>
+              <p className="text-gray-200 font-thin md:text-sm lg:text-base min-h-12">
+                Java | Swing | JDBC | MySql
+              </p>
+            </div>
+            <div className="px-6 pt-4 pb-2 bg-gray-900 flex items-center justify-between">
+              <span className="flex">
+              <a
+                title="GitHub"
+                href={"https://github.com/vineet-javadev/Mine-Game"}
+                target="_blank"
+                className="cursor-pointer inline-block text-sm md:text-xs lg:text-sm bg-gray-200 rounded-full p-1 font-semibold text-gray-700 mr-2"
+              >
+                {/* GitHub */}
+                <svg
+                  className="hover:scale-110 hover:animate-spin"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="22"
+                  height="22"
+                  color="black"
+                  fill="none"
+                >
+                  <path
+                    d="M6.51734 17.1132C6.91177 17.6905 8.10883 18.9228 9.74168 19.2333M9.86428 22C8.83582 21.8306 2 19.6057 2 12.0926C2 5.06329 8.0019 2 12.0008 2C15.9996 2 22 5.06329 22 12.0926C22 19.6057 15.1642 21.8306 14.1357 22C14.1357 22 13.9267 18.5826 14.0487 17.9969C14.1706 17.4113 13.7552 16.4688 13.7552 16.4688C14.7262 16.1055 16.2043 15.5847 16.7001 14.1874C17.0848 13.1032 17.3268 11.5288 16.2508 10.0489C16.2508 10.0489 16.5318 7.65809 15.9996 7.56548C15.4675 7.47287 13.8998 8.51192 13.8998 8.51192C13.4432 8.38248 12.4243 8.13476 12.0018 8.17939C11.5792 8.13476 10.5568 8.38248 10.1002 8.51192C10.1002 8.51192 8.53249 7.47287 8.00036 7.56548C7.46823 7.65809 7.74917 10.0489 7.74917 10.0489C6.67316 11.5288 6.91516 13.1032 7.2999 14.1874C7.79575 15.5847 9.27384 16.1055 10.2448 16.4688C10.2448 16.4688 9.82944 17.4113 9.95135 17.9969C10.0733 18.5826 9.86428 22 9.86428 22Z"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </a>
+              <a
+                  title="Documentation"
+                  href="https://github.com/vineet-javadev/sample_tree_structure/blob/master/README.md"
+                  target="_blank"
+                  className="cursor-pointer inline-block bg-gray-200 rounded-full p-1 text-sm md:text-xs lg:text-sm font-semibold text-gray-700 mr-2"
+                >
+                  {/* Documentation */}
+                  <svg
+                    className="hover:scale-110 hover:animate-spin"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="22"
+                    height="22"
+                    color="#000000"
+                    fill="none"
+                  >
+                    <path
+                      d="M14.5 5L12.5 5C9.67157 5 8.25736 5 7.37868 5.87868C6.5 6.75736 6.5 8.17157 6.5 11L6.5 16C6.5 18.8284 6.5 20.2426 7.37868 21.1213C8.25736 22 9.67157 22 12.5 22H13.8431C14.6606 22 15.0694 22 15.4369 21.8478C15.8045 21.6955 16.0935 21.4065 16.6716 20.8284L19.3284 18.1716C19.9065 17.5935 20.1955 17.3045 20.3478 16.9369C20.5 16.5694 20.5 16.1606 20.5 15.3431V11C20.5 8.17157 20.5 6.75736 19.6213 5.87868C18.7426 5 17.3284 5 14.5 5Z"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M15 21.5L15 20.5C15 18.6144 15 17.6716 15.5858 17.0858C16.1716 16.5 17.1144 16.5 19 16.5L20 16.5"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M6.5 19C4.84315 19 3.5 17.6569 3.5 16L3.5 8C3.5 5.17157 3.5 3.75736 4.37868 2.87868C5.25736 2 6.67157 2 9.5 2L14.5004 2C16.1572 2.00001 17.5004 3.34319 17.5004 5.00003"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M10.0011 13L14.0011 13M10.0011 9L17.0011 9"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </a>
+              </span>
+              
+              <a
+                download="Vineet's CV.pdf"
+                title="Download Zip"
+                href={
+                  "https://drive.google.com/uc?export=download&id=1SAZfPDfOL-oWEhLCwLBi6fctASoUhfQh"
+                  // https://drive.google.com/uc?export=download&id=1A2B3C4D5EF6GHIJKL
+                }
+                target="_blank"
+              >
+                <span className="cursor-pointer inline-block text-sm md:text-xs lg:text-sm bg-gray-200 rounded-full p-1  font-semibold text-gray-700 ">
+                  {/* Installation File */}
+                  <svg
+                    className="hover:scale-110 hover:animate-spin"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="22"
+                    height="22"
+                    color="#d0021b"
+                    fill="none"
+                  >
+                    <path
+                      d="M7 13H9.87684C10.1285 13 10.2684 13.291 10.1112 13.4874L7.14993 17.1877C6.88793 17.515 7.1211 18 7.54051 18H10.5013M13.0021 13H14.2526M14.2526 13H15.503M14.2526 13V17.8096M13.0021 18H15.503M18.0039 18V13H19.4687C20.1185 13 20.818 13.2888 20.963 13.9219C21.0123 14.1368 21.0124 14.3459 20.963 14.563C20.8173 15.2035 20.1126 15.5 19.4555 15.5H19.0043"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M15 22H10.7273C7.46607 22 5.83546 22 4.70307 21.2022C4.37862 20.9736 4.09058 20.7025 3.8477 20.3971C3 19.3313 3 17.7966 3 14.7273V12.1818C3 9.21865 3 7.73706 3.46894 6.55375C4.22281 4.65142 5.81714 3.15088 7.83836 2.44135C9.09563 2 10.6698 2 13.8182 2C15.6173 2 16.5168 2 17.2352 2.2522C18.3902 2.65765 19.3012 3.5151 19.732 4.60214C20 5.27832 20 6.12494 20 7.81818V10"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M3 12C3 10.1591 4.49238 8.66667 6.33333 8.66667C6.99912 8.66667 7.78404 8.78333 8.43137 8.60988C9.00652 8.45576 9.45576 8.00652 9.60988 7.43136C9.78333 6.78404 9.66667 5.99912 9.66667 5.33333C9.66667 3.49238 11.1591 2 13 2"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          {/* Blog Application */}
           <div className="md:w-[30%] overflow-hidden shadow-lg hover:scale-105 md:hover:scale-110 duration-300 border-2 border-sky-600 shadow-black rounded-lg">
             <Image
               className="w-full aspect-video"
@@ -285,7 +747,7 @@ export default function Home() {
             <div className="px-6 py-4 bg-gray-900">
               <div className="font-bold text-xl mb-2">Blog-WebApp</div>
               <p className="text-gray-200 font-thin md:text-sm lg:text-base  min-h-12">
-                Full-Stack | Next Js | Java | Spring Boot | MySql
+                Next Js | Java | Spring Boot | MySql
               </p>
             </div>
             <div className="px-6 pt-4 pb-2 bg-gray-900 flex items-center justify-between">
@@ -380,6 +842,52 @@ export default function Home() {
                     />
                   </svg>
                 </a>
+                <a
+                  title="Documentation"
+                  href="https://github.com/vineet-javadev/sample_tree_structure/blob/master/README.md"
+                  target="_blank"
+                  className="cursor-pointer inline-block bg-gray-200 rounded-full p-1 text-sm md:text-xs lg:text-sm font-semibold text-gray-700 mr-2"
+                >
+                  {/* Documentation */}
+                  <svg
+                    className="hover:scale-110 hover:animate-spin"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="22"
+                    height="22"
+                    color="#000000"
+                    fill="none"
+                  >
+                    <path
+                      d="M14.5 5L12.5 5C9.67157 5 8.25736 5 7.37868 5.87868C6.5 6.75736 6.5 8.17157 6.5 11L6.5 16C6.5 18.8284 6.5 20.2426 7.37868 21.1213C8.25736 22 9.67157 22 12.5 22H13.8431C14.6606 22 15.0694 22 15.4369 21.8478C15.8045 21.6955 16.0935 21.4065 16.6716 20.8284L19.3284 18.1716C19.9065 17.5935 20.1955 17.3045 20.3478 16.9369C20.5 16.5694 20.5 16.1606 20.5 15.3431V11C20.5 8.17157 20.5 6.75736 19.6213 5.87868C18.7426 5 17.3284 5 14.5 5Z"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M15 21.5L15 20.5C15 18.6144 15 17.6716 15.5858 17.0858C16.1716 16.5 17.1144 16.5 19 16.5L20 16.5"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M6.5 19C4.84315 19 3.5 17.6569 3.5 16L3.5 8C3.5 5.17157 3.5 3.75736 4.37868 2.87868C5.25736 2 6.67157 2 9.5 2L14.5004 2C16.1572 2.00001 17.5004 3.34319 17.5004 5.00003"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M10.0011 13L14.0011 13M10.0011 9L17.0011 9"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </a>
               </span>
               <a
                 title="Preview not available"
@@ -414,98 +922,11 @@ export default function Home() {
             </div>
           </div>
 
+          {/* Chat Room */}
           <div className="md:w-[30%] overflow-hidden shadow-lg hover:scale-105 md:hover:scale-110 duration-300 border-2 border-sky-600 shadow-black rounded-lg">
             <Image
               className="w-full aspect-video"
-              src="https://stake-casino-bonus.com/wp-content/uploads/2022/06/mystake-chicken-game-alternative-mines-stake.com-casino-2022-tutorial-how-to-win.png"
-              alt="Sunset in the mountains"
-              width={600}
-              height={400}
-            />
-
-            <div className="px-6 py-4 bg-gray-900">
-              <div className="font-bold text-xl mb-2">Mine Game</div>
-              <p className="text-gray-200 font-thin md:text-sm lg:text-base min-h-12">
-                Java | Swing | JDBC | MySql
-              </p>
-            </div>
-            <div className="px-6 pt-4 pb-2 bg-gray-900 flex items-center justify-between">
-              <a
-                title="GitHub"
-                href={"https://github.com/vineet-javadev/Mine-Game"}
-                target="_blank"
-                className="cursor-pointer inline-block text-sm md:text-xs lg:text-sm bg-gray-200 rounded-full p-1 font-semibold text-gray-700 mr-2"
-              >
-                {/* GitHub */}
-                <svg
-                  className="hover:scale-110 hover:animate-spin"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width="22"
-                  height="22"
-                  color="black"
-                  fill="none"
-                >
-                  <path
-                    d="M6.51734 17.1132C6.91177 17.6905 8.10883 18.9228 9.74168 19.2333M9.86428 22C8.83582 21.8306 2 19.6057 2 12.0926C2 5.06329 8.0019 2 12.0008 2C15.9996 2 22 5.06329 22 12.0926C22 19.6057 15.1642 21.8306 14.1357 22C14.1357 22 13.9267 18.5826 14.0487 17.9969C14.1706 17.4113 13.7552 16.4688 13.7552 16.4688C14.7262 16.1055 16.2043 15.5847 16.7001 14.1874C17.0848 13.1032 17.3268 11.5288 16.2508 10.0489C16.2508 10.0489 16.5318 7.65809 15.9996 7.56548C15.4675 7.47287 13.8998 8.51192 13.8998 8.51192C13.4432 8.38248 12.4243 8.13476 12.0018 8.17939C11.5792 8.13476 10.5568 8.38248 10.1002 8.51192C10.1002 8.51192 8.53249 7.47287 8.00036 7.56548C7.46823 7.65809 7.74917 10.0489 7.74917 10.0489C6.67316 11.5288 6.91516 13.1032 7.2999 14.1874C7.79575 15.5847 9.27384 16.1055 10.2448 16.4688C10.2448 16.4688 9.82944 17.4113 9.95135 17.9969C10.0733 18.5826 9.86428 22 9.86428 22Z"
-                    stroke="currentColor"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </a>
-              <a
-                download="Vineet's CV.pdf"
-                title="Download Zip"
-                href={
-                  "https://drive.google.com/uc?export=download&id=1SAZfPDfOL-oWEhLCwLBi6fctASoUhfQh"
-                  // https://drive.google.com/uc?export=download&id=1A2B3C4D5EF6GHIJKL
-                }
-                target="_blank"
-              >
-                <span className="cursor-pointer inline-block text-sm md:text-xs lg:text-sm bg-gray-200 rounded-full p-1  font-semibold text-gray-700 ">
-                  {/* Installation File */}
-                  <svg
-                    className="hover:scale-110 hover:animate-spin"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    width="22"
-                    height="22"
-                    color="#d0021b"
-                    fill="none"
-                  >
-                    <path
-                      d="M7 13H9.87684C10.1285 13 10.2684 13.291 10.1112 13.4874L7.14993 17.1877C6.88793 17.515 7.1211 18 7.54051 18H10.5013M13.0021 13H14.2526M14.2526 13H15.503M14.2526 13V17.8096M13.0021 18H15.503M18.0039 18V13H19.4687C20.1185 13 20.818 13.2888 20.963 13.9219C21.0123 14.1368 21.0124 14.3459 20.963 14.563C20.8173 15.2035 20.1126 15.5 19.4555 15.5H19.0043"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M15 22H10.7273C7.46607 22 5.83546 22 4.70307 21.2022C4.37862 20.9736 4.09058 20.7025 3.8477 20.3971C3 19.3313 3 17.7966 3 14.7273V12.1818C3 9.21865 3 7.73706 3.46894 6.55375C4.22281 4.65142 5.81714 3.15088 7.83836 2.44135C9.09563 2 10.6698 2 13.8182 2C15.6173 2 16.5168 2 17.2352 2.2522C18.3902 2.65765 19.3012 3.5151 19.732 4.60214C20 5.27832 20 6.12494 20 7.81818V10"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M3 12C3 10.1591 4.49238 8.66667 6.33333 8.66667C6.99912 8.66667 7.78404 8.78333 8.43137 8.60988C9.00652 8.45576 9.45576 8.00652 9.60988 7.43136C9.78333 6.78404 9.66667 5.99912 9.66667 5.33333C9.66667 3.49238 11.1591 2 13 2"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </span>
-              </a>
-            </div>
-          </div>
-
-          <div className="md:w-[30%] overflow-hidden shadow-lg hover:scale-105 md:hover:scale-110 duration-300 border-2 border-sky-600 shadow-black rounded-lg">
-            <Image
-              className="w-full aspect-video"
-              src="https://savedelete.com/wp-content/uploads/2017/03/Chat-Rooms.jpg"
+              src="https://firebasestorage.googleapis.com/v0/b/portfolio-imagedb.appspot.com/o/global%20chatroom%2Freactflow-tree.PNG?alt=media&token=9e85aece-fa86-4a74-90a1-f59fc9a30130"
               alt="Sunset in the mountains"
               width={600}
               height={400}
@@ -602,6 +1023,52 @@ export default function Home() {
                     />
                     <path
                       d="M13.1128 2C12.372 2.14815 10.9793 2.97778 11.3349 5.11111C11.6905 7.24444 11.1869 7.81482 10.8906 8.11111"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </a>
+                <a
+                  title="Documentation"
+                  href="https://github.com/vineet-javadev/sample_tree_structure/blob/master/README.md"
+                  target="_blank"
+                  className="cursor-pointer inline-block bg-gray-200 rounded-full p-1 text-sm md:text-xs lg:text-sm font-semibold text-gray-700 mr-2"
+                >
+                  {/* Documentation */}
+                  <svg
+                    className="hover:scale-110 hover:animate-spin"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="22"
+                    height="22"
+                    color="#000000"
+                    fill="none"
+                  >
+                    <path
+                      d="M14.5 5L12.5 5C9.67157 5 8.25736 5 7.37868 5.87868C6.5 6.75736 6.5 8.17157 6.5 11L6.5 16C6.5 18.8284 6.5 20.2426 7.37868 21.1213C8.25736 22 9.67157 22 12.5 22H13.8431C14.6606 22 15.0694 22 15.4369 21.8478C15.8045 21.6955 16.0935 21.4065 16.6716 20.8284L19.3284 18.1716C19.9065 17.5935 20.1955 17.3045 20.3478 16.9369C20.5 16.5694 20.5 16.1606 20.5 15.3431V11C20.5 8.17157 20.5 6.75736 19.6213 5.87868C18.7426 5 17.3284 5 14.5 5Z"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M15 21.5L15 20.5C15 18.6144 15 17.6716 15.5858 17.0858C16.1716 16.5 17.1144 16.5 19 16.5L20 16.5"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M6.5 19C4.84315 19 3.5 17.6569 3.5 16L3.5 8C3.5 5.17157 3.5 3.75736 4.37868 2.87868C5.25736 2 6.67157 2 9.5 2L14.5004 2C16.1572 2.00001 17.5004 3.34319 17.5004 5.00003"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M10.0011 13L14.0011 13M10.0011 9L17.0011 9"
                       stroke="currentColor"
                       strokeWidth="1.5"
                       strokeLinecap="round"
@@ -1035,6 +1502,7 @@ export default function Home() {
         <div className=" m-auto my-5 pb-10 lg:py-10 flex items-start gap-8 justify-evenly">
           <div className="max-w-screen-lg mx-auto  p-5 pt-0">
             <div className="grid grid-cols-1 md:grid-cols-12 border">
+              {/* about hi hello message */}
               <div className="bg-gray-900 md:col-span-4 p-10 text-white">
                 <p className="mt-4 text-sm leading-7 font-regular uppercase">
                   Contact
@@ -1140,6 +1608,8 @@ export default function Home() {
                   <span className="text-sm">24/7</span>
                 </div>
               </div>
+
+              {/* form section */}
               <form
                 className="md:col-span-8 p-10"
                 ref={form}
@@ -1162,26 +1632,12 @@ export default function Home() {
                       required
                     />
                   </div>
-                  {/* <div className="w-full md:w-1/2 px-3">
-                    <label
-                      className="block uppercase tracking-wide text-white text-xs font-bold mb-2"
-                      htmlFor="grid-last-name"
-                    >
-                      Last Name
-                    </label>
-                    <input
-                      className="appearance-none block w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                      id="grid-last-name"
-                      type="text"
-                      placeholder="Doe"
-                    />
-                  </div> */}
                 </div>
                 <div className="flex flex-wrap -mx-3 mb-6">
                   <div className="w-full px-3">
                     <label
                       className="block uppercase tracking-wide text-white text-xs font-bold mb-2"
-                      htmlFor="grid-password"
+                      htmlFor="grid-email"
                     >
                       Email Address
                     </label>
@@ -1200,11 +1656,12 @@ export default function Home() {
                   <div className="w-full px-3">
                     <label
                       className="block uppercase tracking-wide text-white text-xs font-bold mb-2"
-                      htmlFor="grid-password"
+                      htmlFor="grid-message"
                     >
                       Your Message
                     </label>
                     <textarea
+                      id="grid-message"
                       rows="10"
                       className="appearance-none block w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                       name="message"
@@ -1230,7 +1687,7 @@ export default function Home() {
       </Element>
 
       {/* Footer */}
-      <nav className="w-full h-16 md:h-20 lg:h-32 flex items-center justify-center px-20 bg-gradient-to-t from-black to-transparent">
+      <footer className="w-full h-16 md:h-20 lg:h-32 flex items-center justify-center px-20 bg-gradient-to-t from-black to-transparent">
         {/* <div>
           <span className="cursor-default text-4xl">Portfolio</span>
         </div>
@@ -1265,11 +1722,12 @@ export default function Home() {
             />
           </svg>
         </span>
-      </nav>
+      </footer>
 
       {/* Social Links */}
       <div className="hidden fixed md:block bottom-1 md:bottom-4 right-1 lg:right-3 p-2">
         <ul className="">
+          {/* Github */}
           <li className="my-4">
             <a
               href="https://github.com/vineet-javadev"
@@ -1292,7 +1750,8 @@ export default function Home() {
               </svg>
             </a>
           </li>
-          <li className="my-4">
+          {/* Instagram */}
+          {/* <li className="my-4">
             <a
               href="/"
               aria-label="INSTAGRAM"
@@ -1332,7 +1791,8 @@ export default function Home() {
                 <path d="M12 18.13c3.38 0 6.13-2.75 6.13-6.13S15.38 5.87 12 5.87 5.87 8.62 5.87 12s2.75 6.13 6.13 6.13zm0-10.76c2.553 0 4.63 2.077 4.63 4.63s-2.077 4.63-4.63 4.63S7.37 14.553 7.37 12 9.447 7.37 12 7.37zM18.358 7.362c.986 0 1.729-.74 1.729-1.721 0-1.023-.782-1.721-1.728-1.721-.986 0-1.729.74-1.729 1.721 0 1.021.778 1.721 1.728 1.721zm.177-1.886c.316.279-.405.618-.405.166 0-.27.367-.2.405-.166z"></path>
               </svg>
             </a>
-          </li>
+          </li> */}
+          {/* LinkedIn */}
           <li className="my-4">
             <a
               href="https://www.linkedin.com/in/vineet-javadev/"
@@ -1385,7 +1845,8 @@ export default function Home() {
               </svg>
             </a>
           </li>
-          <li className="my-4">
+          {/* Facebook */}
+          {/* <li className="my-4">
             <a
               href="/"
               aria-label="FACEBOOK"
@@ -1408,7 +1869,7 @@ export default function Home() {
                 <path d="M58 206c-5.523 0-10-4.477-10-10v-83.5c0-5.523 4.477-10 10-10s10 4.477 10 10V196c0 5.523-4.477 10-10 10zM58 249.5c-5.523 0-10-4.477-10-10v-.118c0-5.523 4.477-10 10-10s10 4.477 10 10v.118c0 5.523-4.477 10-10 10z"></path>
               </svg>
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
     </>
