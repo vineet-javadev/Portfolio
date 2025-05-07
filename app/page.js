@@ -130,7 +130,7 @@ export default function Home() {
       )}
 
       {/* background layout */}
-      <div className="w-full min-h-screen bg-[url('https://assets.awwwards.com/awards/submissions/2022/08/62ed824664c3a873839057.png')] object-cover bg-bottom bg-no-repeat blur-md fixed top-0 z-[-2]"></div>
+      <div className="w-full min-h-screen bg-[url('https://images.wallpaperscraft.com/image/single/moon_space_black_185222_3840x2160.jpg')] object-cover bg-bottom bg-no-repeat blur-md fixed top-0 z-[-2]"></div>
 
       {/* navigation Bar */}
       <nav
