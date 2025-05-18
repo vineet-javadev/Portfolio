@@ -275,7 +275,7 @@ export default function Home() {
           <div className="md:w-[30%] overflow-hidden shadow-lg hover:scale-105 md:hover:scale-110 duration-300 border-2 border-sky-600 shadow-black rounded-lg">
             <Image
               className="w-full aspect-video"
-              src="https://firebasestorage.googleapis.com/v0/b/portfolio-imagedb.appspot.com/o/screenshotHome.PNG?alt=media&token=451a548c-9876-4a8a-911d-522c1c4aa9b5"
+              src="https://firebasestorage.googleapis.com/v0/b/portfolio-imagedb.appspot.com/o/ai%20generative%20zeta%2Fai%20generative%20zeta%20home%20page.PNG?alt=media&token=a6b3dbfa-43d7-407b-9800-9bca47970430"
               alt="AI Generative Thumbnail"
               width={600}
               height={400}
@@ -428,7 +428,7 @@ export default function Home() {
               </span>
               <a
                 title="Live Preview"
-                href="https://ai-generative-zeta.vercel.app/"
+                href="https://ai-generative-zeta-v2.vercel.app/"
                 target="_blank"
                 className="cursor-pointer inline-block bg-gray-200 rounded-full p-1 text-sm md:text-xs lg:text-sm font-semibold text-gray-700 "
               >
@@ -738,8 +738,8 @@ export default function Home() {
           <div className="md:w-[30%] overflow-hidden shadow-lg hover:scale-105 md:hover:scale-110 duration-300 border-2 border-sky-600 shadow-black rounded-lg">
             <Image
               className="w-full aspect-video"
-              src="https://i1.wp.com/theappentrepreneur.com/wp-content/uploads/2013/02/Blogging-Apps-For-Bloggers.jpg?fit=730%2C382&ssl=1"
-              alt="Sunset in the mountains"
+              src="https://firebasestorage.googleapis.com/v0/b/portfolio-imagedb.appspot.com/o/myblog%20webapp%2FBlogApp%20home%20page.PNG?alt=media&token=741bddf8-687b-4bcf-920a-f396a7bac20d"
+              alt="MyBlog-WebApp Project"
               width={600}
               height={400}
             />
@@ -926,7 +926,7 @@ export default function Home() {
           <div className="md:w-[30%] overflow-hidden shadow-lg hover:scale-105 md:hover:scale-110 duration-300 border-2 border-sky-600 shadow-black rounded-lg">
             <Image
               className="w-full aspect-video"
-              src="https://firebasestorage.googleapis.com/v0/b/portfolio-imagedb.appspot.com/o/global%20chatroom%2Freactflow-tree.PNG?alt=media&token=9e85aece-fa86-4a74-90a1-f59fc9a30130"
+              src="https://firebasestorage.googleapis.com/v0/b/portfolio-imagedb.appspot.com/o/global%20chatroom%2Fglobal%20chatroom%20home%20page.PNG?alt=media&token=d3123250-d17a-431b-bc66-526656813d47"
               alt="Sunset in the mountains"
               width={600}
               height={400}
@@ -1079,7 +1079,7 @@ export default function Home() {
               </span>
               <a
                 title="Live Preview"
-                href="https://frontend-global-chatroom.vercel.app/"
+                href="https://global-chatroom.vercel.app/"
                 target="_blank"
                 className="cursor-pointer inline-block bg-gray-200 rounded-full p-1 text-sm md:text-xs lg:text-sm font-semibold text-gray-700 "
               >
