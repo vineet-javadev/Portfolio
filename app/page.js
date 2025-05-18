@@ -131,7 +131,7 @@ export default function Home() {
 
       {/* background layout */}
       <div
-      className="fixed top-0 left-0 w-full h-full bg-fixed bg-no-repeat bg-center"
+      className="fixed top-0 left-0 w-full h-full -z-10 bg-fixed bg-no-repeat bg-center"
       style={{
         backgroundImage:
           "url('https://images.wallpaperscraft.com/image/single/moon_space_black_185222_3840x2160.jpg')",
