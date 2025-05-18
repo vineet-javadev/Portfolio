@@ -130,7 +130,9 @@ export default function Home() {
       )}
 
       {/* background layout */}
-      <div className="w-full min-h-screen bg-[url('https://images.wallpaperscraft.com/image/single/moon_space_black_185222_3840x2160.jpg')] object-cover bg-bottom bg-no-repeat fixed top-0 z-[-2]"></div>
+      <div className="fixed top-0 left-0 w-full min-h-screen bg-fixed bg-no-repeat bg-center transform scale-[0.7]"
+  style="background-image: url('https://images.wallpaperscraft.com/image/single/moon_space_black_185222_3840x2160.jpg');"
+></div>
 
       {/* navigation Bar */}
       <nav
