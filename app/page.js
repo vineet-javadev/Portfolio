@@ -165,7 +165,7 @@ export default function Home() {
               </li>
             </Link>
             <a
-              href="https://drive.google.com/file/d/1SAZfPDfOL-oWEhLCwLBi6fctASoUhfQh/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1jcAbKfBWux-1C8J8DbxGBaHqAZ8B9s9z/view?usp=drivesdk"
               target="_blank"
             >
               <li className="rounded-lg bg-white text-black cursor-pointer px-4 py-2 font-bold hover:text-sky-900">
