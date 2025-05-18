@@ -131,7 +131,7 @@ export default function Home() {
 
       {/* background layout */}
       <div
-      className="fixed top-0 left-0 w-full min-full bg-fixed bg-no-repeat bg-center"
+      className="fixed top-0 left-0 w-full h-full bg-fixed bg-no-repeat bg-center"
       style={{
         backgroundImage:
           "url('https://images.wallpaperscraft.com/image/single/moon_space_black_185222_3840x2160.jpg')",
@@ -185,7 +185,7 @@ export default function Home() {
       {/* Intro Section */}
       <Element className="container m-auto py-5 md:py-10 lg:py-28 flex justify-center">
         <div className=" w-full flex flex-col gap-3 justify-center items-center">
-          <div className="text-4xl md:text-5xl lg:text-7xl font-bold cursor-default">
+          <div className="text-4xl md:text-5xl lg:text-7xl font-bold cursor-default text-sky-300">
             Vineet k. Chauhan
           </div>
           <div className="text-sm  md:text-md lg:text-xl text-blue-600 font-bold pl-4 cursor-default">
