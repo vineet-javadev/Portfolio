@@ -198,11 +198,11 @@ export default function Home() {
             </span>{" "} */}
             <TypingAnimation /> Developer
           </div>
-          <div className="md:hidden w-9/12 lg:w-11/12 pb-5 text-sm font-mono flex items-center  text-gray-400 cursor-default text-center pl-4">
+          <div className="md:hidden w-9/12 lg:w-11/12 pb-5 text-shadow-lg/30 text-sm font-mono flex items-center  text-gray-400 cursor-default text-center pl-4">
             Java Full Stack Developer | Spring boot | Spring AI | MySQL | React
             Js | Next Js | Tailwind | DSA | Problem solving
           </div>
-          <div className="hidden w-9/12 lg:w-11/12 pb-5 text-sm font-mono md:flex items-center  text-gray-400 cursor-default text-center pl-4">
+          <div className="hidden w-9/12 lg:w-11/12 pb-5 text-shadow-lg/30 text-sm font-mono md:flex items-center  text-gray-400 cursor-default text-center pl-4">
             Java Full Stack Developer | Backend | Spring boot | Spring AI |
             Scalable APIs | JDBC | MySQL | React Js | Next Js | Tailwind |
             Bootstrap Data Structures and Algorithm ( DSA ) | Problem solving |
